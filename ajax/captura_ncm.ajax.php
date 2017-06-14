@@ -1,6 +1,6 @@
 <?php 
-	include 'server/conexao.php';
-	include 'server/funcoes_cest.php';
+	include '../server/conexao.php';
+	include '../server/funcoes_cest.php';
 	@session_start();
 
 	$sql_ncm = "SELECT ID_NCM, 

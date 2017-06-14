@@ -1,5 +1,5 @@
 <?php 
-	include 'server/funcoes_cest.php';
+	include '../server/funcoes_cest.php';
 
 	$importados = insertNCM();
 

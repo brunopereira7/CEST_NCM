@@ -1,6 +1,6 @@
 <?php 
-	include 'server/conexao.php';
-	include 'server/funcoes.php';
+	include '../server/conexao.php';
+	include '../server/funcoes.php';
 	$ncm = addslashes($_REQUEST['NCM']);
 	// $ncm = '73181500';
 	$NCM_ORIGINAL = $ncm;

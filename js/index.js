@@ -15,7 +15,7 @@ function aviso(codigo_aviso){
 function deltaNCM() {
 
 
-	$.getJSON('deleta_ncm.ajax.php',{
+	$.getJSON('ajax/deleta_ncm.ajax.php',{
 		ajax: 'true',
 	}, 
 	function(j){
@@ -29,7 +29,7 @@ function deltaNCM() {
 function importaNCM() {
 
 
-	$.getJSON('importa_ncm.ajax.php',
+	$.getJSON('ajax/importa_ncm.ajax.php',
 	function(j){
 		if (j[0].resultado) {
 			captura_ncm();
@@ -42,7 +42,7 @@ function importaNCM() {
 
 function captura_ncm() {
 
-	$.getJSON('captura_ncm.ajax.php', 
+	$.getJSON('ajax/captura_ncm.ajax.php', 
 	function(j){
 
 		var tabela = '';
@@ -82,7 +82,7 @@ function captura_ncm() {
 function verificaNCM(id_ncm,NCM){
 
 
-	$.getJSON('verifica_ncm.ajax.php',{
+	$.getJSON('ajax/verifica_ncm.ajax.php',{
 		NCM: NCM,
 	},
 	function(j){
@@ -118,7 +118,7 @@ function verificaNCM(id_ncm,NCM){
 }
 
 function ajustaNCM(id_ncm,cest) {
-	$.getJSON('ajusta_ncm.ajax.php',{
+	$.getJSON('ajax/ajusta_ncm.ajax.php',{
 		ID_NCM: id_ncm,
 		CEST: cest,
 	},function(j){
@@ -135,7 +135,7 @@ function ajustaNCM(id_ncm,cest) {
 
 function arrumaNCM() {
 	
-	$.getJSON('arruma_ncm.ajax.php',
+	$.getJSON('ajax/arruma_ncm.ajax.php',
 	function(j){
 		if (j[0].resultado){
 			alert('NCMs ajustados com sucesso!');
@@ -147,7 +147,7 @@ function arrumaNCM() {
 
 function listarUpdate() {
 
-	$.getJSON('gerar_scripts.ajax.php',
+	$.getJSON('ajax/gerar_scripts.ajax.php',
 	function(j){
 		var tabela_update = '';
 		tabela_update = '<tr><th>UPDATE</th></tr>';

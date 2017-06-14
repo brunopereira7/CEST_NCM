@@ -1,5 +1,5 @@
 <?php 
-	include 'server/conexao.php';
+	include '../server/conexao.php';
 	$sql_ncm = "SELECT N.NCM,
 					   U.CEST
 				  FROM TBL_UPDATE U

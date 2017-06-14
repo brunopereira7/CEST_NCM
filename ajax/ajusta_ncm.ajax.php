@@ -1,5 +1,5 @@
 <?php 
-	include 'server/conexao.php';
+	include '../server/conexao.php';
 
 	$ID_NCM = addslashes($_REQUEST['ID_NCM']);
 	$CEST   = addslashes($_REQUEST['CEST']);

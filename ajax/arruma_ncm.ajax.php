@@ -1,5 +1,5 @@
 <?php 
-	include 'server/conexao.php';
+	include '../server/conexao.php';
 
 	$sql_deleta = "DELETE FROM TBL_NCM";
 	$exe_deleta = odbc_exec($db_cliente, $sql_deleta);

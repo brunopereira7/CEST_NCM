@@ -1,6 +1,6 @@
 <?php 
 	function insertNCM(){
-		include 'server/conexao.php';
+		include '../server/conexao.php';
 
 		$sql_ncm = "SELECT COUNT(P.ID_PRODUTO) AS CONTAGEM, 
 						   P.NCM,

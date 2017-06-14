@@ -1,5 +1,5 @@
 <?php 
-	include 'server/conexao.php';
+	include '../server/conexao.php';
 
 	odbc_exec($db_consulta, "DELETE FROM TBL_IBPTAX");
 
